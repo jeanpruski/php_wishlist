@@ -1,0 +1,520 @@
+.xxxcontainer {
+    width: 100%;
+    height: 100%;
+}
+.xxxcontainer {
+    background-image: url('../img/snow1.png'), url('../img/snow2.png'), url('../img/snow3.png');
+    animation: snow 20s linear infinite;
+}
+.contest {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/backgrou.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-weight: bold;
+    width: 100vw;
+    position: fixed;
+}
+body {
+    width: 100vw;
+    min-height: 520px;
+    height: 93vh;
+    background-image: linear-gradient(#ef2828, #931a1a);
+}
+.backgroundFlocon {
+    margin-top: -10px;
+    margin-left: -9px;
+    width: 100vw;
+    height: 100%;
+    background-image: url(../img/bottomFlocon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.background {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/backgroundImage.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.container {
+    height: 100%;
+    margin: auto;
+    max-width: 400px;
+    animation: affichage 1s ease;
+}
+@keyframes affichage {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+    20% {
+        transform: scale(1.05);
+    }
+    100% {}
+}
+@keyframes acheter {
+    0% {
+        transform: scale(1) rotate(10deg);
+    }
+    50% {
+        transform: scale(1.3) rotate(-10deg);
+    }
+    100% {
+        transform: scale(1) rotate(10deg);
+    }
+}
+.jusity {
+    text-align: justify;
+    margin-bottom: 35px;
+    font-weight: 100;
+}
+.bottomground {
+    height: 15%;
+    width: 100%;
+    background-image: linear-gradient(white, #A5A5A5);
+}
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+h1 {
+    padding-top: 6vh;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0vh;
+    margin-bottom: 6vh;
+    background-image: url(../img/flocontitle.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    cursor: pointer;
+    transition: all 2s;
+}
+h1:hover {
+    transform: scale(1.1);
+    font-size: 3.2rem;
+    opacity: 0.8;
+}
+p {
+    font-size: 1.3rem;
+    text-align: center;
+}
+.title {
+    margin-block-start: 1.4em;
+    margin-block-end: 0em;
+}
+.titleajout {
+    margin-block-start: 0.4em;
+    margin-block-end: 0em;
+    text-align: justify;
+}
+.bottom_info {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+#amount {
+    border: none;
+    background-color: rgba(193, 33, 33, 0);
+    width: 32%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+#slider-range {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    ;
+    background-color: #e8e8e8;
+}
+#type {
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-image: url(../img/fleche.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    color: #AE1E1E;
+    font-size: 1.3rem;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 280px;
+    height: 38px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px grey;
+    font-family: 'Nunito', sans-serif;
+}
+#optiondiv #utype {
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-image: url(../img/fleche.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    color: #AE1E1E;
+    font-size: 1.3rem;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+    height: 38px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px grey;
+    font-family: 'Nunito', sans-serif;
+}
+.center {
+    text-align: justify;
+    font-weight: 100;
+}
+.center em {
+    font-weight: bold;
+}
+#boutonGeneral {
+    margin-top: 2vh;
+    width: 50%;
+    height: 60px;
+    font-size: 1.3rem;
+    background-color: white;
+    border: 1px solid #d1d1d1;
+    border-radius: 50px;
+    color: #ad4141;
+    cursor: pointer;
+    transition: all 1s;
+    background-image: url(../img/boutonflocon.svg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+#boutonGeneral:hover {
+    width: 70%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transform: scale(1.1);
+    background-image: url(../img/boutonflocon2.svg);
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    color: white;
+    box-shadow: 1px 1px 20px black;
+}
+#boutonGeneralAjout {
+    margin-top: 2vh;
+    width: 50%;
+    height: 60px;
+    font-size: 1.3rem;
+    background-color: white;
+    border: 1px solid #d1d1d1;
+    border-radius: 50px;
+    color: #ad4141;
+    cursor: pointer;
+    transition: all 1s;
+    background-image: url(../img/boutonflocon.svg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+#boutonGeneralAjout:hover {
+    width: 70%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transform: scale(1.1);
+    background-image: url(../img/boutonflocon2.svg);
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    color: white;
+    box-shadow: 1px 1px 20px black;
+}
+#champ {
+    width: 100%;
+    display: inline-block;
+}
+#champ .champ {
+    margin-bottom: 4vh;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    width: 100%;
+}
+#uprix {
+    margin-bottom: 4vh;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    width: 80px;
+}
+#champ .demi {
+    min-width: 20%;
+}
+#uname {
+    width: 100%;
+}
+#optiondiv {
+    width: 103%;
+    display: flex;
+    justify-content: space-between;
+}
+#optiondiv .champ {
+    width: 28%;
+}
+select {
+    height: 200px;
+}
+#extraLink {
+    background-image: url(../img/caddie.svg);
+    position: absolute;
+    right: 5px;
+    bottom: -20px;
+    color: white;
+    width: 70px;
+    height: 70px;
+    transition: all 1s;
+    animation: acheter 8s ease infinite;
+}
+#extraLink:hover {
+    background-image: url(../img/caddie2.svg), url(../img/caddie.svg);
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+#extra {
+    width: 100%;
+    margin: 2vh auto 4vh auto;
+    font-size: 1.3rem;
+    background-color: white;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    color: #ad4141;
+    cursor: pointer;
+    transition: all 2s;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    padding: 15px 20px;
+    transform-origin: center;
+}
+#extra:hover {
+    font-size: 1.5rem;
+    border-radius: 50px;
+    transform: scale(1.1);
+    background-image: url(../img/boutonflocon3.svg);
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    color: white;
+    box-shadow: 1px 1px 20px black;
+}
+.sexecheck {
+    position: absolute;
+    left: -9999px;
+}
+.sexecheck:checked + #labelSexe1 {
+    background-color: #a22222;
+    background-image: url(../img/femmeico.svg)
+}
+.sexecheck:checked + #labelSexe2 {
+    background-color: #a22222;
+    background-image: url(../img/hommeico.svg)
+}
+.sexecheck:checked + #labelSexeajout {
+    background-color: #a22222;
+    background-image: url(../img/femmeico.svg)
+}
+.labelSexe {
+    width: 36px;
+    height: 36px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 1.3px solid white;
+    border-radius: 10px;
+    color: #fff;
+    background-color: grey;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color .2s, box-shadow .2s;
+}
+.labelSexeajout {
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    border: 1.3px solid white;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color .2s, box-shadow .2s;
+}
+#labelSexe1 {
+    background-image: url(../img/femmeico2.svg)
+}
+#labelSexeajout {
+    background-image: url(../img/hommeico.svg)
+}
+#labelSexe2 {
+    background-image: url(../img/hommeico2.svg)
+}
+.checkSexe {
+    display: flex;
+}
+
+/*
+.labelSexe:first-of-type {
+    transform: translateX(-400px);
+}
+.labelSexe:last-of-type {
+    transform: translateX(40px);
+}*/
+
+
+/* -------- Cadeau ---------- */
+
+#cadeau {
+    text-align: justify;
+}
+.cadre {
+    width: 400px;
+    height: 280px;
+    margin: 0 auto 3vh auto;
+    border: 2px solid white;
+    position: relative;
+    border-radius: 10px;
+}
+#gift_name {
+    position: absolute;
+    top: -16px;
+    left: 10px;
+    width: 94%;
+    font-size: 1.3rem;
+}
+#nom {
+    padding: 0 5px;
+    margin-bottom: 10px;
+    background-color: #CE3A38;
+}
+#gift_pic {
+    margin: 12% auto;
+    height: 76%;
+    width: 76%;
+}
+#gift_price {
+    background-color: white;
+    padding: 0 5px;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    font-size: 2rem;
+    color: #AAA;
+}
+#prix {
+    padding: 0 10px;
+    position: absolute;
+    bottom: -40px;
+    left: -12px;
+    font-size: 2rem;
+    color: white;
+}
+#option {
+    margin-top: 4vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.option_rond {
+    width: 80px;
+    height: 80px;
+    border-radius: 45px;
+    transition: all 1s;
+    cursor: pointer;
+    border: 0px solid white;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+p.flexy {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+p.flexy2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+#backTitle {
+    margin-top: 8px;
+    width: 80px;
+    height: 80px;
+    border-radius: 45px;
+    transition: all 1s;
+    cursor: pointer;
+    border: 0px solid white;
+    background-image: url(../img/back.svg);
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+#backTitle:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+    background-image: url(../img/back2.svg), url(../img/back.svg);
+}
+.option_rond:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+.option_rond:hover:nth-child(1) {
+    background-image: url(../img/back2.svg);
+}
+.option_rond:hover:nth-child(2) {
+    background-image: url(../img/again2.svg);
+}
+.option_rond:hover:nth-child(3) {
+    background-image: url(../img/caddie2.svg);
+}
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 80%;
+    }
+    #amount {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .title {
+        font-size: 1.2rem;
+    }
+}
