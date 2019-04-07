@@ -9,3 +9,4 @@ Cette dernière nous permet :
 **Fini les sueurs froides à l'approche de Noël
 
 ![alt](http://prjski.xyz/img/github/wishlist.gif)
+![alt](http://prjski.xyz/img/github/weather.gif)
